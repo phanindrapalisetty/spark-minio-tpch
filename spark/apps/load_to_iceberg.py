@@ -24,4 +24,4 @@ df = df.toDF("c_custkey", "c_name", "c_address", "c_nationkey", "c_phone", "c_ac
 # Create Iceberg table (overwrite if exists)
 df.writeTo("iceberg.tpch.customer").using("iceberg").createOrReplace()
 
-print("✅ Customer table written to Iceberg in Parquet format on MinIO!")
+print("Customer table written to Iceberg in Parquet format on Minio")
