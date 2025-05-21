@@ -1,14 +1,14 @@
-Setting up Apache Spark with MinIO for TPC-H Data
+## Setting up Apache Spark with MinIO for TPC-H Data
 This guide will walk you through setting up Apache Spark with MinIO as the object storage for loading and processing TPC-H benchmark data.
-Prerequisites
 
+## Prerequisites
 Docker and Docker Compose
 Java 8 or higher
 Scala (compatible with your Spark version)
 Python 3.x (for PySpark, if needed)
 
 
-Schema Reference for TPC-H Tables
+## Schema Reference for TPC-H Tables
 Here are the column definitions for the main TPC-H tables:
 
   - customer: c_custkey, c_name, c_address, c_nationkey, c_phone, c_acctbal, c_mktsegment, c_comment
@@ -21,7 +21,7 @@ Here are the column definitions for the main TPC-H tables:
   - supplier: s_suppkey, s_name, s_address, s_nationkey, s_phone, s_acctbal, s_comment
 
 
-Troubleshooting
+## Troubleshooting
 
   - MinIO Connection Issues: Make sure your MinIO service is running and accessible
   - Class Not Found Errors: Ensure all required dependencies are included in your build or with the --packages option
