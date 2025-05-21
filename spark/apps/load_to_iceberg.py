@@ -4,7 +4,7 @@ spark = SparkSession.builder \
     .appName("Convert TPCH to Iceberg") \
     .config("spark.sql.catalog.iceberg", "org.apache.iceberg.spark.SparkCatalog") \
     .config("spark.sql.catalog.iceberg.catalog-impl", "org.apache.iceberg.hadoop.HadoopCatalog") \
-    .config("spark.sql.catalog.iceberg.warehouse", "s3a://tpch-iceberg/") \
+    .config("spark.sql.catalog.iceberg.warehouse", "s3a://iceberg/") \
     .config("spark.sql.catalog.iceberg.io-impl", "org.apache.iceberg.hadoop.HadoopFileIO") \
     .config("spark.hadoop.fs.s3a.endpoint", "http://minio:9000") \
     .config("spark.hadoop.fs.s3a.access.key", "minio") \
